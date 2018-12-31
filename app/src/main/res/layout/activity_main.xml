@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity" >
+
+    <!--
+     android:groupIndicator="@null" 取消默认图片
+     android:childIndicatorLeft 设置孩子左边间距
+     android:dividerHeight 这个高度一定要设置，不然显示不出来分割线，估计默认为0 吧
+     android:childDivider="@drawable/child_bg" 这个直接引color,或者图片会导致整个孩子背景都为这个颜色
+    -->
+
+    <com.example.jasper.ccxapp.widget.StickyLayout
+        android:id="@+id/sticky_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/sticky_header"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/old_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/currentUserName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户1"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_above="@+id/my_avatar_iv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="1dp"
+                android:textSize="14.0sp"
+                android:textColor="#111055"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/my_avatar_iv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_launcher"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sticky_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <com.example.jasper.ccxapp.widget.PinnedHeaderExpandableListView
+                android:id="@+id/expandablelist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@null"
+                android:childDivider="@drawable/child_bg"
+                android:childIndicatorLeft="0dp"
+                android:divider="@color/white"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"></com.example.jasper.ccxapp.widget.PinnedHeaderExpandableListView>
+        </LinearLayout>
+    </com.example.jasper.ccxapp.widget.StickyLayout>
+
+    <include
+        layout="@layout/activity_main_left"
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:gravity="center_horizontal" >
+
+    </include>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_message_image_civ"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img_default" />
+
+    <TextView
+        android:id="@+id/add_message_image_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/qwe"
+        android:textColor="#8B7D7b" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qqq"
+            android:paddingTop="16.5dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/message_userName_tv"
+            android:layout_width="wrap_content"
+            android:paddingTop="16.5dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nic"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/message_nickname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="57dp"
+            android:background="@null"
+            android:autofillHints=""
+            android:inputType="" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/message_sex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.5dp"
+            android:text="@string/ijjj"
+            android:textSize="17sp" />
+
+        <RadioGroup
+            android:id="@+id/message_sex_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="57dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:checked="true"
+                android:text="@string/qwer" />
+
+            <RadioButton
+                android:id="@+id/female_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/nv" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/message_birthday2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rrr"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/showBirthday_et"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="57dp"
+            android:background="@android:color/transparent"
+            android:text="@string/_1990_01_01"
+            android:textColor="#8B7D7b"
+            android:textSize="16sp"
+            android:autofillHints=""
+            android:inputType="" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/message_address2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qr"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/message_address_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="57dp"
+            android:background="@null"
+            android:text="@string/beijing"
+            android:inputType=""
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/rr"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/message_explain_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="23dp"
+            android:background="@null"
+            android:inputType=""
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="17dp"
+            android:text="@string/_1"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="23dp"
+            android:id="@+id/securityQ1_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="17dp"
+            android:text="@string/rrrr"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="64dp"
+            android:id="@+id/securityA1_et"
+            android:background="@null"
+            android:inputType=""
+            android:autofillHints="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="17dp"
+            android:text="@string/_2"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="23dp"
+            android:id="@+id/securityQ2_et"
+            android:hint="@string/aaaa"
+            android:background="@null"
+            android:inputType=""
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="17dp"
+            android:text="@string/qweee"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="64dp"
+            android:id="@+id/securityA2_et"
+            android:background="@null"
+            android:inputType=""
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CCCCCC" />
+
+    <Button
+        android:id="@+id/add_message_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_color"
+        android:text="@string/tijiao"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
+</ScrollView>

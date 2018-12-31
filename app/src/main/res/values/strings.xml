@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">寸草心(老人端)</string>
+    <string name="zeffect_recordbutton_finger_up_to_cancal_send">手指上滑，取消发送</string>
+    <string name="zeffect_recordbutton_releasing_finger_to_cancal_send">松开手指，取消发送</string>
+    <string name="zeffect_recordbutton_time_too_short">时间太短</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">群聊名称</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="qwe">点击更改头像</string>
+    <string name="qwer">男</string>
+    <string name="rrr">生日</string>
+    <string name="qr">地区</string>
+    <string name="qqq">用户名</string>
+    <string name="_1990_01_01">1990-01-01</string>
+    <string name="rr">个性签名</string>
+    <string name="_2">密保信息2</string>
+    <string name="aaaa">请输入您的问题</string>
+    <string name="qweee">答案</string>
+    <string name="rrrr">答案</string>
+    <string name="_1">密保信息1</string>
+    <string name="beijing">北京</string>
+    <string name="nic">昵称</string>
+    <string name="tijiao">提交信息</string>
+    <string name="nv">女</string>
+    <string name="ijjj">性别</string>
+    <string name="aaa">请输入昵称</string>
+    <string name="asd">请输入地区</string>
+    <string name="asdsd">请输入签名</string>
+    <string name="aaazxcxc">请输入</string>
+    <string name="qweqwcxzc">请输入</string>
+</resources>

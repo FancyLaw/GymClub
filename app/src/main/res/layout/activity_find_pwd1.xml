@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg"
+    tools:context="com.example.jasper.ccxapp.ui.FindPwd1Activity">
+
+    <EditText
+        android:id="@+id/find_pwd_phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#f5f2f2"
+        android:hint="请输入您需要找回密码的手机号码"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/find_pwd_phone_OK" />
+    <Button
+        android:id="@+id/find_pwd_phone_OK_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_color"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="确定"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/find_pwd_phone_cancel_btn"
+       />
+    <Button
+        android:layout_marginTop="7dp"
+        android:id="@+id/find_pwd_phone_cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/button_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:text="取消"/>
+
+</RelativeLayout>
